@@ -7,7 +7,7 @@ class FunctionsController < ApplicationController
   def index
     @project = Project.find(params[:project_id])
     @tracker = Tracker.find(params[:tracker_id])
-    @functions = Function.all_functions_for(@project)
+    @functions = Function.available_functions_for(@project)
   end
   def new
     @function = Function.new

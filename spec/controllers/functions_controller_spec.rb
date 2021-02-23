@@ -136,9 +136,7 @@ describe FunctionsController, type: :controller do
       expect(response.body).to include("<i class=fa-icon-remove>")
       expect(response.body).to include("Active role in this project with members")
       expect(response.body).to include("Active role in this project without members")
-      expect(response.body).to include("Silent role for this tracker")
-      expect(response.body).to include("Inactive role in this project with members")
-      expect(response.body).to include("Inactive role in this project with members")
+      expect(response.body).to include("Silent role for this tracker")      
     end
 
     it "should appear functions with the appropriate color  " do
